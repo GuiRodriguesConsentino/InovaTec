@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 620px) {
+   #conteudo-painel {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: linear-gradient(to right, black, var(--cor00), #00000050);
+      width: 300px;
+      height: 100%;
+   }
+
+   #conteudo-painel > h1 {
+      font-size: 1.5em;
+      padding-bottom: 30px;
+   }
+
+   #conteudo-painel > p {
+      font-size: 12px;
+      width: 80%;
+      padding-bottom: 30px;
+   }
+
+   .conteudo-container {
+      display:grid;
+      padding: 5px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: 
+      "info01 img02"
+      "img01 info02"
+      "small small";
+   }
+
+   .info01 {
+      grid-area: info01;
+      margin: auto;
+   }
+
+   .img02 {
+      grid-area: img02;
+   }
+
+   .info02 {
+      grid-area: info02;
+      margin: auto;
+   }
+
+   .img01 {
+      grid-area: img01;
+   }
+
+   .conteudo-container .small {
+      grid-area: small;
+      font-size: small;
+      margin-top: 10px;
+      padding-top: 0px;
+   }
+
+   .conteudo-container img {
+      width: 100%;
+      max-width: 400px;
+   }
+
+   .conteudo-container h2 {
+      font-size: 1.7em;
+      
+   }
+
+   .conteudo-container  p {
+      font-size: 20px;
+   }
+}
+
+@media screen and (min-width: 850px) {
+   #painel {
+      background-size: cover;
+   }
+
+   #conteudo-painel {
+      width: 50%;
+   }
+
+   #conteudo-painel  h1 {
+      width: 80%;
+      font-size: 2em;
+   }
+
+   .conteudo-container {
+      background-image: linear-gradient(90deg, black, var(--cor00), black);
+      width: 100%;
+      padding: 0px;
+      margin-top: 20px;
+   }
+
+   .info01 p {
+      max-width: 400px;
+   }
+}
